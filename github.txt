@@ -1,0 +1,43 @@
+git init      # git 생성하기
+
+git clone 링크.git
+
+------
+
+git remote -v        # 저장소 URL 확인
+
+git remote add 저장소 이름 URL.git   # 저장소 URL 추가
+
+git remote delete 저장소 이름   # 저장소 URL 삭제
+
+git remote set_url 저장소 이름 URL.git   # 저장소 URL 수정
+
+------
+
+git status
+
+------
+
+git add 
+
+git commit -m "메시지"
+
+git push
+
+------
+
+git pull
+
+------
+
+git rm -r 파일강제삭제
+
+git rm -f 파일강제삭제
+
+
+
+https://medium.com/@psychet_learn/git-사용법-3장-github-이용하기-f53e765844e3
+
+https://medium.com/@pks2974/자주-사용하는-기초-git-명령어-정리하기-533b3689db81
+
+https://recoveryman.tistory.com/269\
