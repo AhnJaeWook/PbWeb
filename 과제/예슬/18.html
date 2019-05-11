@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Tables</title>
+	<style>
+		table, th, td {	border: 1px solid black; border-collapse: collapse }
+	</style>
+
+</head>
+
+<body>
+
+	<h1>테이블의 열과 행 합치기</h1>
+	<table style="width:100%">
+		<tr>
+			<td colspan="6">1</td>
+		</tr>
+		<tr>
+			<td colspan="6">2</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3</td>
+			<td rowspan="3">4</td>
+			<td colspan="2">5</td>
+			<td>6</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<td colspan="3">8</td>
+			<td>9</td>
+		</tr>
+		<tr>
+			<td colspan="4">10</td>
+		</tr>
+	</table>
+
+</body>
+
+</html>
