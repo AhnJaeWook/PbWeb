@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Images</title>
+  <style>
+		img {
+			width:100%;
+			border: solid 1px black;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>img태그의 alt 속성</h1>
+	<img src="https://i.pinimg.com/236x/c2/82/ca/c282ca9b73cb2f84469ddc45ca1fff62.jpg" alt="민트라구">
+    <h1>이미지의 크기 설정</h1>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSecWa0KrZRpUV1FaDZXbkcJ0yvvU2lwFJ27GqUvntLgqWbKpV" alt="html size" width="320" height="214">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSecWa0KrZRpUV1FaDZXbkcJ0yvvU2lwFJ27GqUvntLgqWbKpV" alt="style size" style="width:320px; height:214px">
+	<h1>이미지의 테두리 설정</h1>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSis78LRPFSCuDhOBc--_2sw02W3nm1EvYFKXIyWO2t8dYSeLwrxg" alt="이미지 테두리" style="width:320px; height:214px; border: 3px solid black">
+		<h1>이미지에 링크 설정</h1>
+
+	<a href="/html/intro">
+		<img src="https://i.pinimg.com/236x/c2/82/ca/c282ca9b73cb2f84469ddc45ca1fff62.jpg" alt="flag" style="width:320px; height:214px; border: 1px solid black">
+	</a>
+	<p>이미지를 클릭해 보세요!</p>
+    	<h1>이미지 맵 만들기</h1>
+	<img src="/examples/images/img_imagemap.jpg" alt="진실혹은거짓" usemap="#vending" style="width:320px; height:240px" />
+	<map name="vending"> 
+		<area  shape="rect" coords="90,60,180,130" alt="거짓" href="https://ko.wikipedia.org/wiki/%EA%B1%B0%EC%A7%93%EB%A7%90">
+		<area  shape="rect" coords="210,200,70,130" alt="진실" href="https://ko.wikipedia.org/wiki/%EC%A7%84%EC%8B%A4">
+	</map>
+	<p>표지판을 눌러보세요!</p>
+</body>
+
+</html>

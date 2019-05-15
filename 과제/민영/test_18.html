@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Tables</title>
+  	<style>
+		table, th, td { border: 1px solid black }
+	</style>
+  	<style>
+		table, th, td {	border: 1px solid black; border-collapse: collapse }
+	</style>
+</head>
+
+<body>
+
+	<h1>테이블 테두링</h1>
+	<table style="width:100%">
+		<tr style="background-color:lightgrey">
+			<th>참치</th>
+			<th>고래</th>		
+			<th>날치</th>
+		</tr>
+		<tr>
+			<td>상어</td>
+			<td>문어</td>		
+			<td>꽁치</td>
+		</tr>
+		<tr>
+			<td>오징어</td>
+			<td>고등어</td>		
+			<td>돌고래</td>
+		</tr>
+	</table>
+  <h1>일반적인 테이블 만들기</h1>
+	<table style="width:100%">
+		<tr style="background-color:lightgrey">
+			<th>참치</th>
+			<th>고래</th>		
+			<th>날치</th>
+		</tr>
+		<tr>
+			<td>상어</td>
+			<td>문어</td>		
+			<td>꽁치</td>
+		</tr>
+		<tr>
+			<td>오징어</td>
+			<td>고등어</td>		
+			<td>돌고래</td>
+		</tr>
+      <h1>테이블의 열 합치기</h1>
+	<table style="width:100%">
+		<tr>
+			<td>참치</td>
+			<td colspan="2">고래</td>		
+		</tr>
+        
+	</table>
+      <h1>테이블의 행 합치기</h1>
+      <table style="width:100%">
+		<caption>해양 생물</caption>
+		<tr>
+			<td>참치</td>
+			<td>고래</td>
+			<td>날치</td>		
+		</tr>
+		<tr>
+			<td rowspan="2">상어</td>
+			<td>문어</td>		
+			<td>꽁치</td>
+		</tr>
+		<tr>
+			<td>고등어</td>		
+			<td>돌고래</td>
+		</tr>
+	</table>
+        
+</body>
+
+</html>
