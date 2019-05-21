@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 API Server Sent Events</title>
+</head>
+
+<body>
+
+	<h1>server sent events를 이용한 자동 갱신</h1>
+
+	<div id="result"></div>
+	<script>
+		if(typeof(EventSource) !== "undefined") {
+			var source = new EventSource("/examples/media/sse.php");
+			source.onmessage = function(event) {
+				document.getElementById("result").innerHTML += event.data + "<br>";
+			};
+		} else {
+			document.getElementById("result").innerHTML = "이 문장은 사용자의 웹 브라우저가 Server Sent Events를 지원하지 않을 때 나타납니다!";
+		}
+	</script>
+</body>
+
+</html>
