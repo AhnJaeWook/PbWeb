@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Multimedia Canvas</title>
+</head>
+
+<body>
+
+	<h1>canvas 요소에 선형 그래디언트 그리기</h1>
+
+	<canvas id="drawCanvas" width="300px" height="200px" style="border: 1px solid #993300">
+		이 문장은 사용자의 웹 브라우저가 canvas 요소를 지원하지 않을 때 나타납니다!
+	</canvas>
+
+	<script>
+		var paper = document.getElementById("drawCanvas");
+		var context = paper.getContext("2d");
+
+		var gradient = context.createLinearGradient(0, 0, 200, 0);
+		gradient.addColorStop(0, "#FFCC00");
+		gradient.addColorStop(1, "#FFCCCC");
+
+		context.fillStyle = gradient;
+		context.font = "45px Arial black";
+		context.fillText("CANVAS", 15, 120);
+	</script>
+
+</body>
+
+</html>
