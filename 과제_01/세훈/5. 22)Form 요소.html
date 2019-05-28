@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Forms</title>
+</head>
+
+<body>
+
+	<h1>텍스트 입력</h1>
+	<form action="/examples/media/request.php">
+		검색할 내용을 입력하세요 :
+		<input type="text" name="search">
+	</form>
+
+	<form>
+    사용자 : <br><input type="text" name="username"><br>
+    비밀번호 : <br><input type="password" name="password">
+	</form>
+
+	<form>
+    <input type="radio" name="lecture" value="html" checked> HTML <br>
+    <input type="radio" name="lecture" value="css"> CSS <br>
+    <input type="radio" name="lecture" value="java"> JAVA <br>
+    <input type="radio" name="lecture" value="cpp"> C++
+	</form>
+
+	<form>
+    <input type="checkbox" name="lecture" value="html" checked> HTML <br>
+    <input type="checkbox" name="lecture" value="css"> CSS <br>
+    <input type="checkbox" name="lecture" value="java"> JAVA <br>
+    <input type="checkbox" name="lecture" value="cpp" disabled> C++
+	</form>
+
+	<form>
+    <input type="file" name="upload_file" accept="image/*">
+	</form>
+
+	<form>
+	<select name="fruit">
+    <option value="apple"> 사과
+    <option value="orange" selected> 귤
+    <option value="strawberry"> 딸기
+    <option value="peach"> 복숭아
+	</select>
+	</form>
+
+</body>
+
+</html>

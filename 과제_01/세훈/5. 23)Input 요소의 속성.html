@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Input Attributes</title>
+</head>
+
+<body>
+
+	<h1>value 속성을 이용한 초기값 설정</h1>
+	<form action="http://tcpschool.com/examples/media/request.php">
+		이름 : <br>
+		<input type="text" name="student_name"><br>
+		학번 : <br>
+		<input type="text" name="student_id"><br>
+		학과 : <br>
+		<input type="text" name="department" value="컴퓨터공학과"><br><br>
+		<input type="submit" value="전송">
+	</form>
+
+	<!--이건 무엇인지 잘 모르겠어서 주석처리합니다
+	<form>
+    이름 : <br><input type="text" name="student_name"><br>
+    학번 : <br><input type="text" name="student_id"><br>
+    학과 : <br><input type="text" name="department" value="컴퓨터공학과" readonly><br>
+	</form>
+	-->
+
+	<form action="http://tcpschool.com/examples/media/request.php">
+		이름 : <br>
+		<input type="text" name="student_name"><br>
+		학번 : <br>
+		<input type="text" name="student_id"><br>
+		학과 : <br>
+		<input type="text" name="department" value="컴퓨터공학과" disabled><br><br>
+		<input type="submit" value="전송">
+	</form>
+
+	<h1>maxlength 속성을 이용한 필드의 최대 길이 설정</h1>
+	<form action="http://tcpschool.com/examples/media/request.php">
+		이름 : (이름은 10자까지만 가능해요!)<br>
+		<input type="text" name="student_name" value="홍길동" maxlength="10"><br>
+		학번 : <br>
+		<input type="text" name="student_id"><br><br>
+		<input type="submit" value="전송">
+	</form>
+	
+	<h1>size 속성을 이용한 필드의 크기 설정</h1>
+	<form action="http://tcpschool.com/examples/media/request.php">
+		이름 : <br>
+		<input type="text" name="student_name" value="홍길동" size="30"><br>
+		학번 : <br>
+		<input type="text" name="student_id"><br><br>
+		<input type="submit" value="전송">
+	</form>
+
+</body>
+
+</html>

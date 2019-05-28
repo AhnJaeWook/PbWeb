@@ -4,9 +4,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Links</title>
+	<style>
+		a:link    { color: teal; }
+		a:visited { color: maroon; text-decoration: none }
+		a:hover   { color: yellow; text-decoration: none }
+		a:active  { color: red; text-decoration: none }
+	</style>
 </head>
 
 <body>
+
+	<h1>a태그의 target 속성값</h1>
+	<h2><a href="/html/intro" target="_blank">blank</a></h2>
+	<h2><a href="/html/intro" target="_self">self</a></h2>
+	<h2><a href="/html/intro" target="_parent">parent</a></h2>
+	<h2><a href="/html/intro" target="_top">top</a></h2>
+	<h2><a href="/html/intro" target="myframe">myframe</a></h2>
+	<iframe name="myframe" style="width:50%; height: 330px"></iframe>
+	
+	<h1>링크의 상태</h1>
+	<h2><a href="/html/intro">링크의 상태에 따라 스타일을 다르게 설정합니다!</a></h2>
 
 	<h1>페이지 책갈피</h1>
 	<a href="#bookmark"><p>제목 15로 갑시다!!!</p></a>

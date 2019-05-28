@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Frames</title>
+</head>
+
+<frameset cols="25%,*,25%"><!--가로로 나누고 싶으면 rows를 사용하면 된다.-->
+<frame name="left" src="/html/intro"/>
+<frame name="center" src="/css/intro"/>
+<frame name="right" src="/php/intro"/>
+<noframes>
+	<body>
+		이 브라우저는 frame태그를 지원하지 않습니다!
+	</body>
+</noframes>
+</frameset>
+
+</html>
